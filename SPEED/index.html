@@ -1,0 +1,448 @@
+<html>
+  <head>
+    <title>極速領域</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <script type="text/javascript" src="myjs.js?ver=201711200201"></script>
+<link type="text/css" rel='stylesheet' href='styles.css?ver=201711200201' >
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css" />
+    <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
+    <style type="text/css">
+      * {
+        color: #fff;
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+      }
+      html {
+        zoom: 0.8;
+      }
+      body {
+        widht: 100%;
+        background-color: transparent;
+      }
+      #H5AlertView {
+        text-align: center;
+      }
+      #title-img {
+        position: relative;
+        z-index: 1;
+      }
+      #title-text {
+        padding-top: 30px;
+        font-size: 23px;
+        color: #ea0000;
+        font-weight: 700;
+      }
+      #info-text {
+        font-size: 15px;
+        color: #bff;
+      }
+      #show_time {
+        padding-top: 5px;
+        font-size: 17px;
+        color: #000;
+      }
+      #content-view {
+        z-index: 0;
+        background: #fff;
+        position: relative;
+        top: -45px;
+        border: 1px solid #00e3e3;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      button {
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        background-color: #46a3ff;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: 0;
+        border: none;
+        border-radius: 3px;
+        padding: 0 8px;
+        margin: 5px 0;
+        font-size: 15px;
+      }
+      button:active {
+        background-color: #387aca;
+        transform: translateY(2px);
+      }
+      .scrollbar {
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: auto;
+      }
+      .scrollbar::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background-color: #f5f5f5;
+      }
+      .scrollbar::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #f5f5f5;
+      }
+      .scrollbar::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #b8b8b8;
+      }
+      .van-Toast {
+        position: bottom;
+        overlay: ture;
+      }
+    </style>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      "undefined" == typeof $ && alert("網路異常!"),
+        $(document).ready(function () {
+          var n;
+          (document.body.onselectstart = document.body.ondrag =
+            function () {
+              return !1;
+            }),
+            $("input").blur(function () {
+              window.scroll(0, 0);
+            }),
+            document.body.addEventListener("touchstart", function () {}),
+            setWindowDrag(50, 0, 70, 70),
+            "undefined" != typeof h5gg &&
+              ((n = function () {
+                var n, t;
+                window.lastorientation != window.orientation &&
+                  ((window.lastorientation = window.orientation),
+                  (t =
+                    90 == Math.abs(window.orientation)
+                      ? ((n = (window.screen.height - 210) / 2),
+                        (window.screen.width - 335) / 2)
+                      : ((n = (window.screen.width - 210) / 2),
+                        (window.screen.height - 335) / 2)),
+                  setWindowRect(n, t, 210, 335));
+              })(),
+              window.addEventListener("orientationchange", n, !1));
+        });
+    </script>
+    <script>
+      setButtonImage("https://i.imgur.com/60rHM90.png");
+    </script>
+    <script>
+
+function auto() {
+
+       h5gg.searchNumber("1000", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("1", "F32", "0x8"),
+          h5gg.searchNearby("88.000008~111.500008", "F32", "0x100"),
+          h5gg.searchNearby("53～61", "F32", "0x100"),
+          h5gg.searchNumber(
+            "88.000008~111.500008",
+            "F32",
+            "0x00000000",
+            "0x200000000"
+          ),
+          h5gg.editAll("870000.8787", "F32"),
+          h5gg.searchNearby("1000", "F32", "0x100"),
+          h5gg.searchNearby("1", "F32", "0x8"),
+          h5gg.searchNumber("1", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("1.15", "F32"),
+          h5gg.clearResults(),
+
+ h5gg.searchNumber("35", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("1.39999997616", "F32", "0x100"),
+          h5gg.searchNumber("35", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("1", "F32"),
+          h5gg.clearResults(),
+
+    h5gg.searchNumber("4.4", "F32", "0x100000000", "0x200000000"),
+          h5gg.searchNearby("256", "I32", "0x50"),
+          h5gg.searchNumber("256", "I32", "0x100000000", "0x200000000"),
+          h5gg.searchNearby("0", "F32", "0x5"),
+          h5gg.searchNumber("0", "F32", "0x10000000", "0x200000000"),
+          h5gg.editAll("3", "F32", "0x100000000", "0x2000000000"),
+          h5gg.clearResults(),
+          vant.Toast("一鍵開啟｜開啟成功");
+      }
+
+      function ag() {
+        h5gg.searchNumber("1000", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("1", "F32", "0x8"),
+          h5gg.searchNearby("88.000008~111.500008", "F32", "0x100"),
+          h5gg.searchNearby("53～61", "F32", "0x100"),
+          h5gg.searchNumber(
+            "88.000008~111.500008",
+            "F32",
+            "0x00000000",
+            "0x200000000"
+          ),
+          h5gg.editAll("870000.8787", "F32"),
+          h5gg.searchNearby("1000", "F32", "0x100"),
+          h5gg.searchNearby("1", "F32", "0x8"),
+          h5gg.searchNumber("1", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("1.15", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("微加速｜開啟成功");
+      }
+      function xb() {
+        h5gg.searchNumber("54.08333969116", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("135", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("板車加速｜開啟成功");
+      }
+      function tibt() {
+        h5gg.searchNumber("5700", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("0.1", "F32", "0x100"),
+          h5gg.searchNumber("5700", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("57", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("地圖穿牆｜開啟成功");
+      }
+      function hbsb() {
+        h5gg.searchNumber("35", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("1.39999997616", "F32", "0x100"),
+          h5gg.searchNumber("35", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("1", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("輕飄雙噴｜開啟成功");
+      }
+      function wxsb() {
+        h5gg.searchNumber("1.4", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("9999", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("無限小噴｜開啟成功");
+      }
+      function tata() {
+        var A = prompt("請輸入加速速度【0~100%】"),
+          g = parseInt(A);
+        0 <= g && g <= 100
+          ? (h5gg.clearResults(),
+            h5gg.searchNumber("1000", "F32", "0x00000000", "0x160000000"),
+            h5gg.searchNearby("1", "F32", "0x4"),
+            h5gg.searchNumber("1", "F32", "0x00000000", "0x160000000"),
+            h5gg.editAll(g, "F32"),
+            h5gg.clearResults(),
+            vant.Toast("地圖加速" + g + "%｜開啟成功"))
+          : vant.Toast("輸入錯誤 請重新輸入");
+      }
+      function zbrun() {
+        h5gg.searchNumber("1000", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("1", "F32", "0x8"),
+          h5gg.searchNearby("88.000008~111.500008", "F32", "0x100"),
+          h5gg.searchNearby("53～61", "F32", "0x50"),
+          h5gg.searchNumber(
+            "88.000008~111.500008",
+            "F32",
+            "0x00000000",
+            "0x200000000"
+          ),
+          h5gg.editAll("88000000.8", "F32"),
+          h5gg.getResultsCount(),
+          h5gg.searchNearby("1000", "F32", "0x100"),
+          h5gg.searchNearby("1", "F32", "0x8"),
+          h5gg.searchNumber("1", "F32", "0x00000000", "0x200000000"),
+          h5gg.editAll("5.878787", "F32"),
+          h5gg.getResultsCount(),
+          h5gg.clearResults(),
+          vant.Toast("復位自動跑圖｜開啟成功");
+      }
+      function alsp() {
+        1 == window.dgpd
+          ? ((window.dgpd = 0),
+            h5gg.searchNumber("1.214760", "F32", "0x100000000", "0x130000000"),
+            h5gg.editAll("1", "F32", "0x1300000000", "0x150000000"),
+            h5gg.clearResults(),
+            vant.Toast("全局加速｜關閉成功"))
+          : ((window.dgpd = 1),
+            h5gg.searchNumber("255", "F32", "0x00000000", "0x200000000"),
+            h5gg.searchNearby("16", "F32", "0x80"),
+            h5gg.searchNearby("15", "F32", "0x80"),
+            h5gg.searchNearby("1", "F32", "0x80"),
+            h5gg.searchNumber("1", "F32", "0x100000000", "0x130000000"),
+            h5gg.editAll("1.214760", "F32", "0x1000000000", "0x130000000"),
+            h5gg.clearResults(),
+            vant.Toast("全局加速｜開啟成功"));
+      }
+      function wxdz() {
+        h5gg.searchNumber("4.4", "F32", "0x100000000", "0x200000000"),
+          h5gg.searchNearby("256", "I32", "0x50"),
+          h5gg.searchNumber("256", "I32", "0x100000000", "0x200000000"),
+          h5gg.searchNearby("0", "F32", "0x5"),
+          h5gg.searchNumber("0", "F32", "0x10000000", "0x200000000"),
+          h5gg.editAll("3", "F32", "0x100000000", "0x2000000000"),
+          h5gg.clearResults(),
+          vant.Toast("無限氮氣｜開啟成功");
+      }
+      function cwsp() {
+        h5gg.clearResults(),
+          h5gg.setFloatTolerance("0.0"),
+          h5gg.clearResults(),
+          h5gg.searchNumber("0.5", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("1", "F32", "0x100"),
+          h5gg.searchNearby("0.30000001192", "F32", "0x100"),
+          h5gg.searchNumber("1", "F32", "0x00000000", "0x200000000"),
+          h5gg.searchNearby("0.1000000049", "F32", "0x100"),
+          h5gg.searchNumber("1", "F32", "0x00000000", "0x200000000"),
+          h5gg.getResults("150", "149"),
+          h5gg.editAll("99999", "F32"),
+          h5gg.clearResults(),
+          h5gg.searchNumber("1000", "F32", "0x00000000", "0x180000000"),
+          h5gg.searchNearby("89.000008~111.500008", "F32", "0x50"),
+          h5gg.searchNumber(
+            "89.000008~111.500008",
+            "F32",
+            "0x00000000",
+            "0x180000000"
+          ),
+          h5gg.editAll("8000000", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("氮氣/小噴加速｜開啟成功");
+      }
+      function ba() {
+        h5gg.searchNumber("4.4", "F32", "0x00000000", "0x180000000"),
+          h5gg.searchNearby("120", "F32", "0x100"),
+          h5gg.searchNearby("45", "F32", "0x100"),
+          h5gg.searchNumber("4.4", "F32", "0x00000000", "0x180000000"),
+          h5gg.editAll("9998.78787", "F32"),
+          h5gg.clearResults(),
+          vant.Toast("秒集｜開啟成功");
+      }
+      function yc() {
+        var g;
+        setWindowTouch =
+          1 == window.zhibo1
+            ? ((window.zhibo1 = 0),
+              h5gg.loadPlugin("ayHide", "h5gg_hideview.dylib"),
+              setButtonImage("https://i.imgur.com/60rHM90.png"),
+              (g = setWindowTouch),
+              vant.Toast("顯示"),
+              function (A) {
+                g(A);
+              })
+            : ((window.zhibo1 = 1),
+              h5gg.loadPlugin("ayHide", "h5gg_hideview.dylib"),
+              setButtonImage(
+                "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAZH0lEQVR4nO3YwQ3AIBDAsNL9dz6mQEjEniDvrJn5AAAAgLf9twMAAACA8wwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIMAAAAAAgAADAAAAAAIMAAAAAAgwAAAAACDAAAAAAIAAAwAAAAACDAAAAAAIMAAAAAAgwAAAAACAAAMAAAAAAgwAAAAACDAAAAAAIGADLbAK/bSnjfsAAAAASUVORK5CYII="
+              ),
+              (g = setWindowTouch),
+              vant.Toast("隱藏"),
+              function (A) {
+                g(A);
+              });
+      }
+    </script>
+  </head>
+
+  <body>
+
+      <div id="H5AlertView">
+      <div id="title-img">
+        <img
+          style="width: 80px; height: 80px; border-radius: 50%"
+          src="https://i.imgur.com/60rHM90.png"
+          width="200"
+          height="200"
+        />
+      </div>
+      <div id="content-view">
+        <div id="title-text">極速領域VIP</div>
+        <div id="info-text">
+          <div id="show_time">
+            <script>
+              function fun(e) {
+                var t = new Date(),
+                  n = t.getFullYear(),
+                  g = t.getMonth() + 1,
+                  a = t.getDate(),
+                  i =
+                    (t.getDay(),
+                    "日一二三四五六".charAt(new Date().getDay()),
+                    t.getHours()),
+                  o = t.getMinutes(),
+                  s = t.getSeconds(),
+                  u = t.getMilliseconds();
+                g < 10 && (g = "0" + g),
+                  a < 10 && (a = "0" + a),
+                  i < 10 && (i = "0" + i),
+                  o < 10 && (o = "0" + o),
+                  s < 10 && (s = "0" + s),
+                  u < 10 ? (u = "00" + u) : u < 100 && (u = "0" + u),
+                  (document.getElementById(e.id).innerHTML =
+                    n +
+                    "年" +
+                    g +
+                    "月" +
+                    a +
+                    "日 " +
+                    i +
+                    ":" +
+                    o +
+                    ":" +
+                    s +
+                    " ");
+              }
+              setInterval("fun(show_time)", 1);
+            </script>
+          </div>
+          <div class="scrollbar" style="max-height: 220px"> 
+
+   <button onclick="auto()">一鍵開啟</button>
+
+  <button onclick="ba()">秒集</button>
+            <button onclick="ag()">微加速</button>
+            <button onclick="zbrun()">自動跑圖</button>
+            <button onclick="alsp()">全局加速</button>
+            <button onclick="wxsb()">無限小噴</button>
+            <button onclick="wxdz()">無限氮氣</button>
+            <button onclick="hbsb()">輕飄雙噴</button>
+            <button onclick="tata()">地圖加速</button>
+            <button onclick="xb()">板車加速</button>
+            <button onclick="tibt()">地圖穿牆</button>
+            <button onclick="cwsp()">氮氣/小噴加速</button>
+            <button onclick="yc()">隱藏/顯示懸浮</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <html lang="en">
+<script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<title>iok</title>
+<script>
+ 
+swal('BG輔助 使用聲明','\r1.感謝使用此腳本 謝謝您的支持 \n2.使用輔助屬逆天行為 封號請自理  \n3.禁止盜賣 請支持原作者(TG:@ioshackkkk) \n','success'); function AddFavorite(title, url) {
+ 
+  try {
+ 
+      window.external.addFavorite(url, title);
+ 
+  }
+ 
+catch (e) {
+ 
+     try {
+ 
+       window.sidebar.addPanel(title, url,);
+ 
+    }
+ 
+     catch (e) {
+ 
+         alert("抱歉，您所使用的浏览器无法完成此操作。");
+ 
+     }
+ 
+  }
+ 
+}
+ 
+</script>
+</body>
+</html>
